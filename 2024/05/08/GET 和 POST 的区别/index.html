@@ -20,12 +20,12 @@
   <title>GET 和 POST 的区别 - Mendicus’ Blog</title>
 
   
-    <meta name="description" content="GET 和 POST 有什么区别？GET 的语义是从服务器上获取资源，比如文本、图片、页面等。参数一般写在 URL 中，URL 只支持 ASCII ，所以 GET 的参数只能是 ASCII 字符。浏览器对 URL 的长度有限制。 POST 的语义是根据请求负荷（body）对指定的资源做出处理。请求的参数写在报文 body 中，可以是任意格式，浏览器对 body 的大小不作限制 GET 和 PO">
+    <meta name="description" content="深入聊聊 GET 和 POST 的区别">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GET 和 POST 的区别">
 <meta property="og:url" content="http://example.com/2024/05/08/GET%20%E5%92%8C%20POST%20%E7%9A%84%E5%8C%BA%E5%88%AB/index.html">
 <meta property="og:site_name" content="Mendicus’ Blog">
-<meta property="og:description" content="GET 和 POST 有什么区别？GET 的语义是从服务器上获取资源，比如文本、图片、页面等。参数一般写在 URL 中，URL 只支持 ASCII ，所以 GET 的参数只能是 ASCII 字符。浏览器对 URL 的长度有限制。 POST 的语义是根据请求负荷（body）对指定的资源做出处理。请求的参数写在报文 body 中，可以是任意格式，浏览器对 body 的大小不作限制 GET 和 PO">
+<meta property="og:description" content="深入聊聊 GET 和 POST 的区别">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-05-08T04:00:00.000Z">
 <meta property="article:modified_time" content="2024-05-07T20:37:00.000Z">
@@ -183,7 +183,7 @@ mjx-container[display="true"] + br {
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/14/Java%20%E7%9A%84%20IO%20%E6%A8%A1%E5%9E%8B/"><span class="title">Java 的 IO 模型</span></a><a class="item title" href="/2024/05/14/Git%20%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81/"><span class="title">Git 项目推送</span></a><a class="item title" href="/2024/05/14/Netty%20%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF/"><span class="title">Netty 修炼之路</span></a><a class="item title" href="/2024/04/30/Java%20Comparator%20%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BD%BF%E7%94%A8/"><span class="title">Java Comparator 接口的使用</span></a><a class="item title" href="/2024/05/12/Java%20%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">Java 线程池的那些事</span></a><a class="item title" href="/2024/05/07/HTTP%201.1%20%E4%BB%8B%E7%BB%8D/"><span class="title">HTTP 1.1 介绍</span></a><a class="item title" href="/2024/05/11/MySQL%20%E8%8C%83%E5%9B%B4%E6%9F%A5%E8%AF%A2%E7%B4%A2%E5%BC%95%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6/"><span class="title">MySQL 范围查询索引问题探究</span></a><a class="item title" href="/2024/05/08/HTTPS%20%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">HTTPS 的那些事</span></a><a class="item title" href="/2024/05/08/GET%20%E5%92%8C%20POST%20%E7%9A%84%E5%8C%BA%E5%88%AB/"><span class="title">GET 和 POST 的区别</span></a><a class="item title" href="/2024/05/03/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="title">React 学习笔记</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/07/HTTP%201.1%20%E4%BB%8B%E7%BB%8D/"><span class="title">HTTP 1.1 介绍</span></a><a class="item title" href="/2024/05/14/Java%20%E7%9A%84%20IO%20%E6%A8%A1%E5%9E%8B/"><span class="title">Java 的 IO 模型</span></a><a class="item title" href="/2024/05/14/Git%20%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81/"><span class="title">Git 项目推送</span></a><a class="item title" href="/2024/05/14/Netty%20%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF/"><span class="title">Netty 修炼之路</span></a><a class="item title" href="/2024/04/30/Java%20Comparator%20%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BD%BF%E7%94%A8/"><span class="title">Java Comparator 接口的使用</span></a><a class="item title" href="/2024/05/12/Java%20%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">Java 线程池的那些事</span></a><a class="item title" href="/2024/05/11/MySQL%20%E8%8C%83%E5%9B%B4%E6%9F%A5%E8%AF%A2%E7%B4%A2%E5%BC%95%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6/"><span class="title">MySQL 范围查询索引问题探究</span></a><a class="item title" href="/2024/05/08/HTTPS%20%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">HTTPS 的那些事</span></a><a class="item title" href="/2024/05/08/GET%20%E5%92%8C%20POST%20%E7%9A%84%E5%8C%BA%E5%88%AB/"><span class="title">GET 和 POST 的区别</span></a><a class="item title" href="/2024/05/03/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="title">React 学习笔记</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -207,7 +207,8 @@ mjx-container[display="true"] + br {
     </div>
     
   </div>
-  </div><article class="md-text content"><span id="more"></span>
+  </div><article class="md-text content"><p>深入聊聊 GET 和 POST 的区别</p>
+<span id="more"></span>
 
 <h2 id="GET-和-POST-有什么区别？"><a href="#GET-和-POST-有什么区别？" class="headerlink" title="GET 和 POST 有什么区别？"></a>GET 和 POST 有什么区别？</h2><p><font color="#7030a0">GET 的语义是从服务器上获取资源</font>，比如文本、图片、页面等。参数一般写在 URL 中，URL 只支持 ASCII ，所以 GET 的参数只能是 ASCII 字符。浏览器对 URL 的长度有限制。</p>
 <p><font color="#7030a0">POST 的语义是根据请求负荷（body）对指定的资源做出处理</font>。请求的参数写在报文 body 中，可以是任意格式，浏览器对 body 的大小不作限制</p>
