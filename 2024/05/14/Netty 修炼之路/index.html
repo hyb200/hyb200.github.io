@@ -28,8 +28,12 @@
 <meta property="og:description" content="Netty 是一个异步的、基于事件驱动的高性能网络应用框架，本文档维护 Netty 的相关内容。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/25_0_6_35_20240525000634.png">
+<meta property="og:image" content="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/26_16_38_55_20240526163854.png">
+<meta property="og:image" content="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/26_16_42_31_20240526164231.png">
+<meta property="og:image" content="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/27_23_26_32_20240527232632.png">
+<meta property="og:image" content="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/27_23_30_8_20240527233008.png">
 <meta property="article:published_time" content="2024-05-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-05-24T16:27:00.000Z">
+<meta property="article:modified_time" content="2024-05-27T09:02:00.000Z">
 <meta property="article:author" content="Mendicus">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/25_0_6_35_20240525000634.png">
@@ -183,7 +187,7 @@ mjx-container[display="true"] + br {
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/14/Java%20%E7%9A%84%20IO%20%E6%A8%A1%E5%9E%8B/"><span class="title">Java 的 IO 模型</span></a><a class="item title" href="/2024/05/14/Netty%20%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF/"><span class="title">Netty 修炼之路</span></a><a class="item title" href="/2024/05/07/HTTP%201.1%20%E4%BB%8B%E7%BB%8D/"><span class="title">HTTP 1.1 介绍</span></a><a class="item title" href="/2024/05/14/Git%20%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81/"><span class="title">Git 项目推送</span></a><a class="item title" href="/2024/04/30/Java%20Comparator%20%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BD%BF%E7%94%A8/"><span class="title">Java Comparator 接口的使用</span></a><a class="item title" href="/2024/05/12/Java%20%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">Java 线程池的那些事</span></a><a class="item title" href="/2024/05/11/MySQL%20%E8%8C%83%E5%9B%B4%E6%9F%A5%E8%AF%A2%E7%B4%A2%E5%BC%95%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6/"><span class="title">MySQL 范围查询索引问题探究</span></a><a class="item title" href="/2024/05/08/HTTPS%20%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">HTTPS 的那些事</span></a><a class="item title" href="/2024/05/08/GET%20%E5%92%8C%20POST%20%E7%9A%84%E5%8C%BA%E5%88%AB/"><span class="title">GET 和 POST 的区别</span></a><a class="item title" href="/2024/05/03/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="title">React 学习笔记</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/25/%E6%9C%8D%E5%8A%A1%E7%AB%AF%E5%90%91%20Web%20%E7%AB%AF%E6%8E%A8%E9%80%81%E6%96%B9%E6%A1%88%E8%AE%BE%E8%AE%A1/"><span class="title">服务端向 Web 端推送方案设计</span></a><a class="item title" href="/2024/05/14/Netty%20%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF/"><span class="title">Netty 修炼之路</span></a><a class="item title" href="/2024/05/14/Java%20%E7%9A%84%20IO%20%E6%A8%A1%E5%9E%8B/"><span class="title">Java 的 IO 模型</span></a><a class="item title" href="/2024/05/07/HTTP%201.1%20%E4%BB%8B%E7%BB%8D/"><span class="title">HTTP 1.1 介绍</span></a><a class="item title" href="/2024/05/14/Git%20%E9%A1%B9%E7%9B%AE%E6%8E%A8%E9%80%81/"><span class="title">Git 项目推送</span></a><a class="item title" href="/2024/04/30/Java%20Comparator%20%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BD%BF%E7%94%A8/"><span class="title">Java Comparator 接口的使用</span></a><a class="item title" href="/2024/05/12/Java%20%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">Java 线程池的那些事</span></a><a class="item title" href="/2024/05/11/MySQL%20%E8%8C%83%E5%9B%B4%E6%9F%A5%E8%AF%A2%E7%B4%A2%E5%BC%95%E9%97%AE%E9%A2%98%E6%8E%A2%E7%A9%B6/"><span class="title">MySQL 范围查询索引问题探究</span></a><a class="item title" href="/2024/05/08/HTTPS%20%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"><span class="title">HTTPS 的那些事</span></a><a class="item title" href="/2024/05/08/GET%20%E5%92%8C%20POST%20%E7%9A%84%E5%8C%BA%E5%88%AB/"><span class="title">GET 和 POST 的区别</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -196,7 +200,7 @@ mjx-container[display="true"] + br {
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-14T16:00:00.000Z">2024-05-15</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-24T16:27:00.000Z">2024-05-25</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-14T16:00:00.000Z">2024-05-15</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-27T09:02:00.000Z">2024-05-27</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -272,6 +276,33 @@ mjx-container[display="true"] + br {
 
 <h2 id="组件与设计"><a href="#组件与设计" class="headerlink" title="组件与设计"></a>组件与设计</h2><h3 id="Channel、EventLoop-和-ChannelFuture"><a href="#Channel、EventLoop-和-ChannelFuture" class="headerlink" title="Channel、EventLoop 和 ChannelFuture"></a>Channel、EventLoop 和 ChannelFuture</h3><ul>
 <li>Channel – Socket</li>
+</ul>
+<p>Channel 的生命周期状态如下表：</p>
+<table>
+<thead>
+<tr>
+<th>状态</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ChannelUnregistered</code></td>
+<td>Channel 已经被创建，但还未注册到 EventLoop</td>
+</tr>
+<tr>
+<td><code>ChannelRegistered</code></td>
+<td>Channel 已经被注册到了 EventLoop</td>
+</tr>
+<tr>
+<td><code>ChannelActive</code></td>
+<td>Channel 处于活动状态，可以接收和发送数据</td>
+</tr>
+<tr>
+<td><code>ChannelInactive</code></td>
+<td>Channel 没有连接到远程节点</td>
+</tr>
+</tbody></table>
+<ul>
 <li>EventLoop – 控制流、多线程、并发</li>
 <li>ChannelFuture – 回调， 异步通知</li>
 </ul>
@@ -283,15 +314,75 @@ mjx-container[display="true"] + br {
 <li>一个 Channel 在它的生命周期内只注册于一个 EventLoop</li>
 <li>一个 EventLoop 可能会被分配给一个或多个 Channel</li>
 </ul>
-<p>在 Netty 的设计中，一个 Channel 的所有操作都由相同的 Thread 执行，消除了同步的需要。</p>
+<p>在 Netty 的设计中，一个 Channel 的所有操作都由相同的 Thread 执行，消除了同步的需要。是线程安全的。</p>
 <p>Netty 提供了 <code>ChannelFuture</code> 接口，其 <code>addListener()</code> 方法注册了一个 <code>ChannelFutureListener</code>，以便在某个操作完成时（无论是否成功）得到通知</p>
-<h3 id="ChannelHandler-和-ChannelPipeline"><a href="#ChannelHandler-和-ChannelPipeline" class="headerlink" title="ChannelHandler 和 ChannelPipeline"></a>ChannelHandler 和 ChannelPipeline</h3><p><code>ChannelHandler</code> 是 Netty 中最主要的组件，用于处理入站和出站数据，由网络事件触发。常用的是 <code>ChannelInboundHandler</code> 接口</p>
-<p>ChannelPipeline 是 ChannelHandler 的编排顺序，某个 ChannelHandler 在处理完某个事件后，会将数据按顺序传递给链中的下一个 ChannelHandler。</p>
+<h3 id="ChannelHandler-和-ChannelPipeline"><a href="#ChannelHandler-和-ChannelPipeline" class="headerlink" title="ChannelHandler 和 ChannelPipeline"></a>ChannelHandler 和 ChannelPipeline</h3><p><code>ChannelHandler</code> 是 Netty 中最主要的组件，用于处理入站和出站数据，由网络事件触发。常用的是 <code>ChannelInboundHandler</code> 接口。</p>
+<p><code>ChannelPipeline</code> 是 <code>ChannelHandler</code> 的实例链。每一个新创建的 Channel 都将会被分配一个新的 ChannelPipeline。某个 <code>ChannelHandler</code> 在处理完某个事件后，会将数据按顺序传递给链中的下一个 <code>ChannelHandler</code>。</p>
 <blockquote>
 <p>出站和入站？<br>从<font color="#7030a0">客户端</font>的角度来讲，事件运动方向<font color="#7030a0">从客户端到服务器端</font>，则为出站，反之为入站。</p>
 </blockquote>
-<p>当 <code>ChannelHandler</code> 被添加到 <code>ChannelPipeline</code> 时 ，它将会被分配一个 <code>ChannelHandlerContext</code>，其代表了 <code>ChannelHandler</code> 和 <code>ChannelPipeline</code> 之间的绑定。这个对象<font color="#0070c0">主要被用于写出站数据</font></p>
-<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><p>每个 <code>Channel</code> 都拥有一个与之相关联的 <code>ChannelPipeline</code>，其持有一个 <code>ChannelHandler</code> 的实例链。在默认的情况下，<code>ChannelHandler</code> 会把对它的方法的调用转发给链中的下一个 <code>ChannelHandler</code>。因此，如果 <code>exceptionCaught()</code> 方法没有被该链中的某处实现，那么所接收的异常将会被传递到 <code>ChannelPipeline</code> 的尾端并被记录。为此，你的应用程序应该提供至少有一个实现了 <code>exceptionCaught()</code>  方法的<code>ChannelHandler</code>。</p>
+<p>当 <code>ChannelHandler</code> 被添加到 <code>ChannelPipeline</code> 时 ，它将会被分配一个 <code>ChannelHandlerContext</code>，其代表了 <code>ChannelHandler</code> 和 <code>ChannelPipeline</code> 之间的绑定。这个对象<font color="#0070c0">主要被用于写出站数据</font>，是不同 <code>ChannelHandler</code> 交互的媒介。</p>
+<ul>
+<li>ChannelPipeline 可以根据需要，通过添加或者删除 ChannelHandler 来动态地修改</li>
+<li>ChannelPipeline 有着丰富的 API 用以被调用，以响应入站和出站事件。</li>
+</ul>
+<p><code>ChannelHandlerContext</code> 有很多的方法，其中一些方法也存在于 <code>Channel</code> 和 <code>ChannelPipeline</code> 本身上，但是有一点重要的不同。如果调用 <code>Channel</code> 或者 <code>ChannelPipeline</code> 上的这些方法，它们将沿着整个 <code>ChannelPipeline</code> 进行传播。</p>
+<p>调用位于 <code>ChannelHandlerContext</code> 上的相同方法，则将从当前所关联的 <code>ChannelHandler</code> 开始，并且只会传播给位于该 <code>ChannelPipeline</code> 中的下一个能够处理该事件的 <code>ChannelHandler</code>。</p>
+<p>如果需要在多个 <code>ChannelPipeline</code> 上共享同一个 <code>ChannelHandler</code>，需要加上 <code>@Sharable</code> 注解，常用于需要跨越多个 <code>Channel</code> 收集信息的场景，注意共享 <code>ChannelHandler</code> 需要处理同步问题。</p>
+<h2 id="ByteBuf"><a href="#ByteBuf" class="headerlink" title="ByteBuf"></a>ByteBuf</h2><p>ByteBuf 是 Netty 的数据处理容器</p>
+<p>优点：</p>
+<ul>
+<li>可以被用户自定义的缓冲区类型扩展</li>
+<li>通过内置的复合缓冲区类型实现了透明的零拷贝</li>
+<li>容量可以按需增长</li>
+<li>在读和写这两种模式之间切换不需要调用 <code>ByteBuffer</code> 的 <code>flip()</code> 方法</li>
+<li>读和写使用了不同的索引</li>
+<li>支持方法的链式调用</li>
+<li>支持引用计数</li>
+<li>支持池化</li>
+</ul>
+<h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p>ByteBuf 维护两个索引，一个用于读取 <code>readerIndex</code>，一个用于写入 <code>writerIndex</code>。如果两个索引值相同，说明达到了“可读数据”的末尾。</p>
+<p>名称以 <code>read</code> 或者 <code>write</code> 开头的 ByteBuf 方法，将会推进其对应的索引，而名称以 <code>set</code> 或者 <code>get</code> 开头的操作则不会。后面的这些方法将在作为一个参数传入的一个相对索引上执行操作。</p>
+<h3 id="使用模式"><a href="#使用模式" class="headerlink" title="使用模式"></a>使用模式</h3><p><font color="#002060">1. 堆缓冲区</font></p>
+<p>将数据存储在 JVM 的堆中，能在没有使用池化的情况下提供快速的分配和释放。</p>
+<p><font color="#002060">2. 直接缓冲区</font></p>
+<p>直接缓冲区的内容在堆外内存，对于网络数据传输是理想的选择。如果需要处理这部分的数据，需要将其复制到工作内存中。</p>
+<p><font color="#002060">3. 复合缓冲区</font></p>
+<p>为多个 ByteBuf 提供一个聚合视图。<code>CompositeByteBuf</code> 实现该模式，它提供了一个将多个缓冲区表示为单个合并缓冲区的虚拟表示。</p>
+<h3 id="分配-ByteBuf"><a href="#分配-ByteBuf" class="headerlink" title="分配 ByteBuf"></a>分配 ByteBuf</h3><p><font color="#002060">1. 按需分配：ByteBufAllocator 接口</font></p>
+<p><code>ByteBufAllocator</code> 实现了 ByteBuf 的池化。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/26_16_38_55_20240526163854.png" alt="image.png"></p>
+<p>Netty 提供了两种 <code>ByteBufAllocator</code> 的实现：<code>PooledByteBufAllocator</code> 和 <code>UnpooledByteBufAllocator</code>。<font color="#7030a0">前者池化了 ByteBuf 的实例</font>以提高性能并最大限度地减少内存碎片。<font color="#7030a0">后者的实现不池化 ByteBuf 实例，并且在每次它被调用时都会返回一个新的实例</font>。</p>
+<p><font color="#002060">2. Unpooled 缓冲区</font></p>
+<p>Unpooled 工具类提供了静态的辅助方法来创建未池化的 ByteBuf 实例。</p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/26_16_42_31_20240526164231.png" alt="image.png"></p>
+<p><font color="#002060">3. ByteBufUtil 类</font></p>
+<p>ByteBufUtil 提供了用于操作ByteBuf的静态的辅助方法。</p>
+<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h3 id="入站异常处理"><a href="#入站异常处理" class="headerlink" title="入站异常处理"></a>入站异常处理</h3><p>每个 <code>Channel</code> 都拥有一个与之相关联的 <code>ChannelPipeline</code>，其持有一个 <code>ChannelHandler</code> 的实例链。在默认的情况下，<code>ChannelHandler</code> 会把对它的方法的调用转发给链中的下一个 <code>ChannelHandler</code>。因此，如果 <code>exceptionCaught()</code> 方法没有被该链中的某处实现，那么所接收的异常将会被传递到 <code>ChannelPipeline</code> 的尾端并被记录。为此，你的应用程序应该提供至少有一个实现了 <code>exceptionCaught()</code>  方法的<code>ChannelHandler</code>。</p>
+<ul>
+<li><code>ChannelHandler.exceptionCaught()</code> 默认将当前异常转发给 <code>ChannelPipeline</code> 中的下一个 <code>ChannelHandler</code></li>
+<li>如果异常到达了 <code>ChannelPipeline</code> 的尾端，它将会被记录为未被处理</li>
+<li>可以重写 <code>exceptionCaught()</code> 方法来自定义处理逻辑</li>
+</ul>
+<h3 id="出站异常处理"><a href="#出站异常处理" class="headerlink" title="出站异常处理"></a>出站异常处理</h3><ul>
+<li>每个出站操作都将返回一个 <code>ChannelFuture</code>。注册到 <code>ChannelFuture</code> 的 <code>ChannelFutureListener</code> 将在操作完成时被通知该操作是成功了还是出错了</li>
+<li>几乎所有的 <code>ChannelOutboundHandler</code> 上的方法都会传入一个 <code>ChannelPromise</code>  的实例。作为 <code>ChannelFuture</code> 的子类，<code>ChannelPromise</code> 也可以被分配用于异步通知的监听器。<ul>
+<li><code>ChannelPromise</code> 还具有提供立即通知的可写方法<ul>
+<li><code>ChannelPromise setSuccess(); </code></li>
+<li><code>ChannelPromise setFailure(Throwable cause);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="EventLoop-和线程模型"><a href="#EventLoop-和线程模型" class="headerlink" title="EventLoop 和线程模型"></a>EventLoop 和线程模型</h2><p><font color="#7030a0">1. 异步传输</font></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/27_23_26_32_20240527232632.png" alt="image.png"></p>
+<p><code>EventLoopGroup</code> 负责为每个新创建的 <code>Channel</code> 分配一个 <code>EventLoop</code>。在当前实现中， 使用<font color="#7030a0">轮询</font>的方式进行分配以获取一个均衡的分布，并且相同的 <code>EventLoop</code> 可能会被分配给多个 <code>Channel</code>。</p>
+<p>一旦一个 <code>Channel</code> 被分配给一个 <code>EventLoop</code>，它将在它的整个生命周期中都使用这个 <code>EventLoop</code>（以及相关联的Thread）。 </p>
+<p>另外，需要注意的是，<code>EventLoop</code> 的分配方式对 <code>ThreadLocal</code> 的使用的影响。因为一个 <code>EventLoop</code> 通常会被用于支撑多个 <code>Channel</code>，所以对于所有相关联的 <code>Channel</code> 来说， <code>ThreadLocal</code> 都将是一样的。这使得它对于实现状态追踪等功能来说是个糟糕的选择。然而， 在一些无状态的上下文中，它仍然可以被用于在多个 <code>Channel</code> 之间共享一些重度的或者代价昂贵的对象，甚至是事件。</p>
+<p><font color="#7030a0">2. 阻塞传输</font></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://git.acwing.com/Mendicus/image/-/raw/main/pictures/2024/05/27_23_30_8_20240527233008.png" alt="image.png"></p>
+<p>每一个 <code>Channel</code> 都将被分配给一个 <code>EventLoop</code>（以及它的 <code>Thread</code>）。每个 <code>Channel</code> 的I/O 事件都将只会被一个 <code>Thread</code> （用于支撑该 <code>Channel</code> 的 <code>EventLoop</code> 的那个 <code>Thread</code>）处理。</p>
 <h2 id="消息的资源管理"><a href="#消息的资源管理" class="headerlink" title="消息的资源管理"></a>消息的资源管理</h2><p><code>write()</code>：不会释放消息</p>
 <p><code>writeAndFlash()</code>：消息会在该方法被调用时释放</p>
 
@@ -329,7 +420,7 @@ mjx-container[display="true"] + br {
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5"><span class="toc-text">一些概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%A4%BA%E4%BE%8B"><span class="toc-text">基础示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Server-%E7%AB%AF"><span class="toc-text">Server 端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Client-%E7%AB%AF"><span class="toc-text">Client 端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="toc-text">组件与设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Channel%E3%80%81EventLoop-%E5%92%8C-ChannelFuture"><span class="toc-text">Channel、EventLoop 和 ChannelFuture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ChannelHandler-%E5%92%8C-ChannelPipeline"><span class="toc-text">ChannelHandler 和 ChannelPipeline</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">异常处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E7%9A%84%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-text">消息的资源管理</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5"><span class="toc-text">一些概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%A4%BA%E4%BE%8B"><span class="toc-text">基础示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Server-%E7%AB%AF"><span class="toc-text">Server 端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Client-%E7%AB%AF"><span class="toc-text">Client 端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E4%B8%8E%E8%AE%BE%E8%AE%A1"><span class="toc-text">组件与设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Channel%E3%80%81EventLoop-%E5%92%8C-ChannelFuture"><span class="toc-text">Channel、EventLoop 和 ChannelFuture</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ChannelHandler-%E5%92%8C-ChannelPipeline"><span class="toc-text">ChannelHandler 和 ChannelPipeline</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ByteBuf"><span class="toc-text">ByteBuf</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">工作原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%A8%A1%E5%BC%8F"><span class="toc-text">使用模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E9%85%8D-ByteBuf"><span class="toc-text">分配 ByteBuf</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">异常处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%A5%E7%AB%99%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">入站异常处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BA%E7%AB%99%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-text">出站异常处理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EventLoop-%E5%92%8C%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B"><span class="toc-text">EventLoop 和线程模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E7%9A%84%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-text">消息的资源管理</span></a></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
 </div></aside><div class='float-panel blur'>
